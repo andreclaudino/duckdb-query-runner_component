@@ -27,7 +27,10 @@ def make_athena_query_runner_component(query_file_path: str, database: str = DEF
             "--query-completion-pooling-time", query_completion_pooling_time,
             "--output-path", OUTPUT_PATH,
             "--log-level", log_level
-        ]
+        ],
+        file_outputs={
+            'data_path': OUTPUT_PATH
+        }
     )
     operator.set_display_name(display_name)
     operator = setup_resources(operator, memory_request, memory_limit, cpu_request, cpu_limit)

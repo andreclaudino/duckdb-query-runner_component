@@ -1,5 +1,5 @@
 DEFAULT_IMAGE_NAME = "152413574287.dkr.ecr.us-east-1.amazonaws.com/athena-query-runner"
-DEFAULT_IMAGE_TAG = "1.0.0"
+DEFAULT_IMAGE_TAG = "1.0.1"
 DEFAULT_DISPLAY_NAME = "Parse Datetime"
 DEFAULT_CONTAINER_NAME = "main"
 
